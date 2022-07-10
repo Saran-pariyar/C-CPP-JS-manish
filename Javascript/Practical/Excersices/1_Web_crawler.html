@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<a href="javascript.com">This includes</a>
+<a href="python.com">This !includes</a>
+<a href="learn_javascript.com">This includes</a>
+
+    <script>
+
+        let links = document.links;
+        let Mytext = "javascript";
+        
+        Array.from(links).forEach(function(element){
+            if(String(element).includes(Mytext)){
+                console.log(element)
+            }
+            else{
+                console.log(element.href = "non_java.com") 
+            }
+        })
+    </script>
+</body>
+</html>

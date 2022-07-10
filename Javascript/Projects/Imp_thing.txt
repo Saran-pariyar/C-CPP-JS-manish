@@ -1,0 +1,4 @@
+IF you learn new thing, then put it in top and explain it with comment, and note all the new things that you learned.
+For better SEO, don't put link on homepage logo, only put homepage link in other pages.
+
+array.shift() //will remove first element of the array

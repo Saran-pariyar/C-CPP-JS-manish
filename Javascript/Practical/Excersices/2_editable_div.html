@@ -1,0 +1,54 @@
+<!-- did not understand  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excersice No.2 </title>
+</head>
+<div class="container">
+    <h1 id="head" class="head_class second_class third_class">This is a heading</h1>
+    
+    <div class="child" id="first">First child</div>
+    <div class="child" id="second">Second child</div>
+    <div class="child" id="third">Third child</div>
+    <div class="child" id="fourth">Fourth child</div>
+    <a href="https://www.google.com">Go to google</a>
+</div>
+
+<ul class="this" id="myul">
+<li class="childu1"   id="fui">this</li>
+<li class="childu1">is</li>
+<li class="childu1">a</li>
+<li class="childu1"   id="lui">list</li>
+
+</ul>
+Search from here
+<input type="text" >
+<input type="button" value="submit" id="btn" >
+
+
+<h1>Important Note</h1>
+<p contentEditable="true" id="text">We can edit the content of this div using attribute in html </p>
+
+<script>
+
+let newElem = document.createElement("div");
+let text = "Click me to edit";
+let parent = document.querySelector(".container");
+let second_child = document.getElementById("first");
+newElem.append(text);
+
+newElem.setAttribute("style" , "border:2px solid black; margin:1rem;");
+parent.insertBefore(newElem, second_child);
+
+
+newElem.addEventListener("mouseover", function(){
+    let notext = document.getElementById("in").length;
+    if(notext == 0){
+   let html = newElem.innerHTML;
+   newElem.innerHTML = `<input type="textarea" id="in"></input>`;
+    }
+})
+
+</script>
+</html>

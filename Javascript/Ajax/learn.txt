@@ -1,0 +1,9 @@
+// synchronous &  Asynchronous programming 
+Note:
+ 1. Synchronous code will execute line by line only. 
+ 2. Asynchronous code doesn't wait the above code to execute before executing itself 
+ 3. AJAX = Asynchronous Javascript & XML
+
+ (We can do asynschronous programming with setTimeOut function)
+
+ AJAX allows to communicate with remote server in an asynschronous way. With ajax calls, we can  request data from web servers dynamically.
